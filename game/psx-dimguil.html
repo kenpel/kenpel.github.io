@@ -1,0 +1,136 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<title>オホーツクに消えない - /game/psx</title>
+<style><!--
+	html { background: #ddd; color: #444; width: 30em; line-height: 1.5; }
+	pre { background: #000; color: lime; width: 40em; padding: 1em; }
+	th,td { border-style: ridge; border-width: 1px; }
+	h1,h2,h3,h4,h5,h6 { border-style: none none solid; border-width: 1px; }
+--></style>
+
+<h1>ウィザードリィ　～ディンギル～</h1>
+
+<img alt="title" src="psx-dimguil-title.png">
+
+<h2>1. はじめに</h2>
+
+<p>スカウトキャラ20人だけを使ってダイアモンドドレイク討伐を目指す。また、ゴーレムルートで最終ガーディアンの迂回を試みる。
+
+<p>スカウトキャラの一覧を<cite><a href="https://dra.jp/game/wizardy-dimguil/guinness-citadel-city/bar-character.html">酒場出現キャラクタ一覧</a></cite>より引用：
+
+<table>
+  <caption>最初から酒場に出現するキャラクタ一覧</caption>
+  <tr> <th>名前<th>lv <th>種族<th>歳<th>性<th>規<th>職<th>力<th>知<th>信<th>体<th>素<th>運<th>装備と持ち物
+  <tr> <td>GAOMA <td>7 <td>ノーム<td>38 <td>男<td>中<td>モ<td>15 <td>10 <td>17 <td>8 <td>16 <td>9 <td>皆朱の槍,革鎧,フェザー帽子,サンダル
+  <tr> <td>GARNET <td>7 <td>人間<td>26 <td>女<td>中<td>バ<td>12 <td>12 <td>14 <td>15 <td>12 <td>10 <td>胸当て,革の小手,鋼の兜,黒いブーツ
+  <tr> <td>ZAI-KA <td>5 <td>ドワーフ<td>51 <td>男<td>中<td>侍<td>14 <td>13 <td>11 <td>14 <td>13 <td>10 <td>刀,わらじ,足軽の鎧,手甲
+  <tr> <td>ユーリー<td>6 <td>エルフ<td>23 <td>女<td>中<td>魔<td>11 <td>16 <td>15 <td>11 <td>12 <td>12 <td>鞭,ローブ,魔法の頭巾,サンダル
+  <tr> <td>MAKAROPH <td>12 <td>ノーム<td>35 <td>男<td>中<td>超<td>14 <td>15 <td>13 <td>16 <td>14 <td>15 <td>堅い杖,ローブ,魔法の頭巾,サンダル
+  <tr> <td>Z2 <td>6 <td>エルフ<td>30 <td>男<td>中<td>詩<td>9 <td>15 <td>12 <td>9 <td>12 <td>11 <td>革鎧,サンダル,革の兜,革の小手
+  <tr> <td>FUJIWARA <td>9 <td>人間<td>40 <td>男<td>中<td>詩<td>13 <td>14 <td>11 <td>12 <td>9 <td>14 <td>リュート,天使の笛,革鎧,サンダル
+</table>
+<table>
+  <caption>キャラクタ死亡後に酒場に出現するキャラクタ一覧</caption>
+  <tr> <th>名前<th>lv <th>種族<th>歳<th>性<th>規<th>職<th>力<th>知<th>信<th>体<th>素<th>運<th>装備と持ち物
+  <tr> <td>CHYOKO <td>7 <td>フェアリ<td>17 <td>女<td>善<td>詩<td>9 <td>16 <td>10 <td>10 <td>18 <td>15 <td>吹き矢,妖精の服,リュート,傷薬7
+  <tr> <td>TAKUN <td>8 <td>ドワーフ<td>54 <td>男<td>善<td>戦<td>18 <td>8 <td>15 <td>14 <td>10 <td>7 <td>戦斧,鎖帷子,鋼の兜,サンダル
+  <tr> <td>YOUBANKS <td>9 <td>人間<td>17 <td>男<td>悪<td>司<td>11 <td>15 <td>15 <td>11 <td>13 <td>14 <td>メイス,鎖帷子,フェザー帽子,サンダル
+  <tr> <td>CORYOON <td>8 <td>ドラコン<td>28 <td>男<td>悪<td>君<td>15 <td>12 <td>14 <td>13 <td>13 <td>16 <td>ロングソード,フルプレート,丸い盾,鉄の小手
+</table>
+<table>
+  <caption>エリアX到達後に酒場に登場するキャラクタ一覧</caption>
+  <tr> <th>名前<th>lv <th>種族<th>歳<th>性<th>規<th>職<th>力<th>知<th>信<th>体<th>素<th>運<th>装備と持ち物
+  <tr> <td>HANY <td>7 <td>フェルパ<td>20 <td>女<td>悪<td>盗<td>11 <td>13 <td>10 <td>11 <td>19 <td>16 <td>鞭,革鎧,サンダル,革の盾
+  <tr> <td>メタルヘッド<td>10 <td>ラウルフ<td>20 <td>男<td>悪<td>僧<td>12 <td>13 <td>17 <td>8 <td>11 <td>14 <td>メイス,鎖帷子,革の盾,サンダル
+  <tr> <td>ジーラ<td>9 <td>リズマン<td>21 <td>女<td>悪<td>錬<td>10 <td>13 <td>11 <td>12 <td>11 <td>17 <td>堅い杖,ローブ,魔法の頭巾,サンダル
+  <tr> <td>KOUICHI <td>4 <td>人間<td>34 <td>男<td>悪<td>僧<td>12 <td>12 <td>14 <td>11 <td>11 <td>10 <td>メイス,鎖帷子,革の兜,サンダル
+  <tr> <td>コロヒチ<td>7 <td>ホビット<td>16 <td>男<td>善<td>司<td>9 <td>16 <td>16 <td>10 <td>12 <td>14 <td>メイス,革鎧,サンダル,丸い盾
+  <tr> <td>MARBERIK <td>4 <td>人間<td>27 <td>男<td>善<td>魔<td>13 <td>17 <td>11 <td>12 <td>12 <td>11 <td>棒,身かわしの衣,フェザー帽子,サンダル
+  <tr> <td>FREEWIND <td>8 <td>エルフ<td>24 <td>男<td>善<td>レ<td>12 <td>10 <td>12 <td>11 <td>10 <td>12 <td>小型の弓,硬い革鎧,サンダル,革の小手
+</table>
+<table>
+  <caption>ケツアルカトル討伐後に酒場に登場するキャラクタ</caption>
+  <tr> <th>名前<th>lv <th>種族<th>歳<th>性<th>規<th>職<th>力<th>知<th>信<th>体<th>素<th>運<th>装備と持ち物
+  <tr> <td>NINMARS <td>6 <td>ホビット<td>28 <td>男<td>善<td>忍<td>17 <td>8 <td>9 <td>14 <td>17 <td>11 <td>忍者刀,忍びの装束,わらじ,忍びの覆面
+</table>
+<table>
+  <caption>巫女の扉解放後に酒場に登場するキャラクタ</caption>
+  <tr> <th>名前<th>lv <th>種族<th>歳<th>性<th>規<th>職<th>力<th>知<th>信<th>体<th>素<th>運<th>装備と持ち物
+  <tr> <td>TAWO <td>9 <td>ラウルフ<td>20 <td>女<td>善<td>僧<td>13 <td>11 <td>16 <td>13 <td>12 <td>14 <td>堅い杖,硬い革鎧,革の兜,サンダル
+</table>
+
+<h2>2. 前準備</h2>
+
+<ol>
+	<li>初期登録メンバー6人をパーティに追加
+	<li>最初から酒場に出現するスカウトキャラ7人を勧誘
+	<li>初期メンバーの装備を全て外す
+	<li>冒険に出て即全滅させる（左手突き当りにいるクアウトリから逃げ続けると早い）
+	<li>適当なスカウトキャラをパーティに追加
+	<li>全滅後に出現するスカウトキャラ4人を勧誘
+	<li>全滅キャラ6人を登録抹消する
+</ol>
+
+<p>これで最初から獲得できるスカウトキャラ11人が揃う。以下短評：
+
+<dl>
+	<dt>GAOMA
+		<dd>力と素早さが高めだが、ノームなので素早さは現在の16で早くも頭打ちとなる。最終的には編成から外れる予定。
+	<dt>GARNET
+		<dd>人間なので侍適正あり。ヴァルキリーのためPri呪文を使え、装備にも恵まれる。
+	<dt>ZAI-KA
+		<dd>ドワーフなので力の伸びしろに期待できるが、高齢なのが難点。ロマン追及のため最終的にモンクに転職予定。顔もそれっぽい。
+	<dt>ユーリー
+		<dd>スカウトキャラ唯一のエルフ女性のため、クリアアイテムの使用は彼女一択となる。ただし中立なので、全特性値を最大まで上げたうえでIhalonを使って性格を変える必要がある。
+	<dt>MAKAROPH
+		<dd>なんとLv12ながらPsi7を一つ習得しており、攻撃・回復・補助に亘って即戦力として大活躍する。しかしノームで素早さが伸びないため、最終編成からは外れる予定。見た目の割に異様に若い。
+	<dt>Z2
+		<dd>初期のバードは三人もいるが、バードの罠識別率はフェアリー・フェルパー以外では95%に届かず、エルフで力も伸びないため良い所が無い。
+	<dt>FUJIWARA
+		<dd>人間なので侍適正あり。バードとしては罠識別に期待できないので、育成は後半に入ってからとなる。モデルは本作の作曲を担当した藤原いくろう氏。
+	<dt>CHYOKO
+		<dd>バードだがフェアリーのため、素早さを24まで上げれば罠識別率は最高値の95%まで高まる。フェアリーニンジャはドラゴンの洞窟において倍打装備に恵まれ火力に期待できるが、今回は高い素早さを生かしてバードのまま起用する。
+	<dt>TAKUN
+		<dd>ドワーフなので力の伸びしろに期待できるが、高齢なのが難点。ロマン追及のため最終的にモンクに転職予定。顔もそれっぽい。
+	<dt>YOUBANKS
+		<dd>人間なので侍適正あり。ビショップで呪文習得が遅すぎるので、育成は後半に入ってからとなる。識別はMAKAROPHのCalduがあるので出番無し。
+	<dt>CORYOON
+		<dd>スカウトキャラ唯一のドラコンだが、ロードなので成長が遅すぎる。少なくとも後半まで起用予定は無し。
+</dl>
+
+<p>これらのメンバーより選抜し、以下の編成で攻略を進める。
+
+<table>
+	<tr><th>名前<th>種族<th>規<th>職
+	<tr><td>TAKUN<td>DWA<td>G<td>FIG
+	<tr><td>ZAI-KA<td>DWA<td>N<td>SAM
+	<tr><td>GARNET<td>HUM<td>N<td>VAL
+	<tr><td>GAOMA<td>GNO<td>N<td>MON
+	<tr><td>MAKAROPH<td>GNO<td>N<td>PSI
+	<tr><td>CHYOKO<td>FAE<td>G<td>BAR
+</table>
+
+<p>まず出発前にMAKAROPHを転職させる。Lv12にして既にPsi7を一つ習得しており、転職してもレベルアップでPsi7の他の呪文を覚えられる。現在のスカウトキャラでアルケミスト呪文を使えるキャラが一人もいないため、転職先にはアルケミストを選択。
+
+<p>今作では序盤から有用なアイテムを宝箱から獲得できるチャンスがあるため、宝箱の識別・解除が重要となる。<a href="https://dra.jp/game/wizardy-dimguil/job/thief-ablitiy.html">盗賊技能</a>より最大で識別率95%となるが、CalnovaはAlc7まで覚えられず、CalfoはGARNETの数回分しか使えない。そのためCHYOKOのレベルアップを吟味し、確実に素早さを伸ばすとともに、MAKAROPHのレベルアップも吟味し、毎回Ihalonを習得させてCHYOKOの素早さに注いでいくことにする。
+
+<p>残留メンバーからアイテムと金を回収し、毒消しを買って装備を分配するが、スカウトキャラの初期武器に全て攻撃回数<code>－％</code>(1回)が付いていることが発覚。安価な武器だけでも売って買い直す。途中、ボルタック商店でXYボタンを押すと集金・分配が出来ることに気付く。
+
+<p>準備が終わったら、いよいよ初陣となる。
+
+<h2>3. フィールド</h2>
+
+<p>パーティの初期レベルが高いためボス四体は楽勝。MAKAROPHがZakaldiで呼んできたArch MageのMadaltoが強すぎる。
+
+<p>GARNETの火力が低い。力の低さが響いている気がする。
+
+<h2>4. 神殿内部</h2>
+
+<p>マーフィー先生は思ったよりタフいが、ACを上げ下げして難なく討伐。
+
+<p>10戦程して帰還後、MAKAROPHとCHYOKOのレベルアップによってCHYOKOの素早さが24に到達。しかし<strike>老ホモ二人</strike>TAKUNとZAI-KAの特性値がとにかく伸びない。リセマラしても二個同時に上がる世界線が少なすぎる。
+
+<p>3Fでバルボと戦闘、MAKAROPHのLasios一発でバルボ以外が壊滅する。速度の低さに不安はあるが、上さえ取れれば楽勝。その他いつの間にか巨人の斧を獲得していたので、TAKUNに装備させる。適正種族の少なさがプレミアム感を演出する。
+
+<img alt="巨人の斧獲得" src="psx-dimguil-04-01.png">
+
+<h2>5. TODO</h2>
